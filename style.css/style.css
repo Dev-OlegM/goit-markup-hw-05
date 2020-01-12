@@ -757,13 +757,14 @@ header .link:focus {
   content: '';
   display: inline-block;
   background-image: url(/img/icons/newslatter-icon.png);
+  background-position: center;
   background-repeat: no-repeat;
   width: 89px;
   height: 56px;
   border-radius: 0 5px 5px 0;
   background-color: #4ec6ab;
   top: 277px;
-  left: 976px;
+  left: 977px;
 }
 
 .newslatter .follow {
@@ -792,4 +793,5 @@ header .link:focus {
   line-height: 26px;
   resize: none;
   margin-bottom: 135px;
+  text-align: justify;
 }
