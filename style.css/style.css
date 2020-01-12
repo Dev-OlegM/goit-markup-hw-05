@@ -741,6 +741,17 @@ header .link:focus {
   margin-left: 653px;
 }
 
+.newslatter .newsletter-header:after {
+  content: '';
+  display: inline-block;
+  background-image: url(/img/lines/newslatter-whiteline.png);
+  position: absolute;
+  width: 164px;
+  height: 15px;
+  left: 714px;
+  top: 166px;
+}
+
 .section-newslatter .follow::after {
   position: absolute;
   content: '';
