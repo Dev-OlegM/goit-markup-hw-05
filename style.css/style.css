@@ -1,0 +1,270 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+/* Container */
+
+.container {
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+
+.site-header .container {
+  display: flex;
+}
+
+header .logo-site {
+  margin: 0;
+  padding-top: 38px;
+  color: #555252;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.site-header .logo-site:first-letter {
+  color: #1abc9c;
+  font-family: 'Roboto - Black';
+  font-weight: 400;
+}
+
+header .header-nav-list {
+  color: #0f0101;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+
+header .link {
+  display: block;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  color: #0f0101;
+}
+
+header .link:hover,
+header .link:focus {
+  color: #1abc9c;
+}
+
+.product {
+  /* margin-top: 111px; */
+  color: #515151;
+  font-family: 'Roboto - Black';
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.header-nav {
+  margin: 0;
+  padding: 0;
+  padding-top: 43px;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 111px;
+}
+
+/* gallery */
+
+.product-header {
+  text-align: center;
+  color: #515151;
+  font-family: 'Roboto';
+  font-size: 48px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 131px;
+  margin-top: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-list {
+  display: flex;
+  width: 255px;
+  background-color: #e9f0fd;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.gallery-list:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.gallery-list:nth-last-child(-n + 4) {
+  margin-bottom: 0px;
+}
+
+.gallery-link {
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  width: 255px;
+  height: 320px;
+}
+
+.gallery-img {
+  width: 200px;
+}
+
+.gallery-descr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 15px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #323232;
+  width: 200px;
+  height: 40px;
+  position: relative;
+  color: #ffffff;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto - Black';
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #8c8c8c;
+  width: 55px;
+  height: 40px;
+  position: relative;
+  color: #ffffff;
+}
+
+.gallery-img {
+  width: 255px;
+  position: absolute;
+}
+
+.gallery-link:hover .gallery-descr {
+  background-color: #1abc9c;
+}
+.gallery-link:hover .price {
+  background-color: #7fd9c7;
+}
+
+/* News */
+
+.news-header {
+  color: #555252;
+  font-family: 'Roboto';
+  font-size: 48px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 120px;
+  margin-top: 0;
+}
+
+.news-list {
+  display: flex;
+  padding-top: 120px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 81px;
+}
+
+.header-news {
+  color: #555252;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 14px;
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.descr-news {
+  color: #555252;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.read-more {
+  width: 159px;
+  height: 51px;
+  background-color: #4ec6ab;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.news .read-more-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.news-item {
+  margin-right: 30px;
+}
+
+.news-item:nth-last-child(-n + 1) {
+  margin-right: 0;
+}
+
+.news .read-more-link:hover {
+  color: #1abc9c;
+}
+
+.item-for-header {
+  padding-top: 105px;
+}
+
+.read-more-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4ec6ab;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  cursor: pointer;
+  width: 159px;
+  height: 51px;
+  text-align: center;
+}
