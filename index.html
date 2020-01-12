@@ -18,12 +18,14 @@
         <div class="header-top-menu">
           <ul class="contact-info clear">
             <li class="phone">
-              <a class="phone-number clear" href="123-123456789"
+              <a class="phone-number clear" href="tel:123-123456789"
                 >123-123456789</a
               >
             </li>
             <li class="mail">
-              <a class="mail-adress clear" href="info@ltntcom">info@ltntcom</a>
+              <a class="mail-adress clear" href="mailto:info@ltntcom"
+                >info@ltntcom</a
+              >
             </li>
           </ul>
 
@@ -70,7 +72,7 @@
 
       <section class="about">
         <div class="container">
-          <ul class="about-items clear">
+          <ul class="about-items">
             <li class="item1">
               <h2 class="item-header">SETTING</h2>
               <p class="item-descr">
@@ -114,46 +116,54 @@
             <ul class="item-list">
               <li class="item">
                 <a class="item-link" href="">
-                  <img
-                    class="item-img"
-                    src="./img/new colection/man.jpg"
-                    alt="man"
-                  />
-                  <h3 class="item-descr">BLUE TSHIRT</h3>
+                  <div class="overlay">
+                    <img
+                      class="item-img"
+                      src="./img/new colection/man.jpg"
+                      alt="man"
+                    />
+                  </div>
+                  <h3 class="item-descr">Blue Tshirt</h3>
                   <p class="price-item">$26</p>
                 </a>
               </li>
               <li class="item">
                 <a class="item-link" href="">
-                  <img
-                    class="item-img"
-                    src="./img/new colection/woman.jpg"
-                    alt="woman"
-                  />
-                  <h3 class="item-descr">BLUE TSHIRT</h3>
-                  <p class="price-item">$26</p>
+                  <div class="overlay">
+                    <img
+                      class="item-img"
+                      src="./img/new colection/woman.jpg"
+                      alt="woman"
+                    />
+                  </div>
+                  <h3 class="item-descr">WOMAN shirt</h3>
+                  <p class="price-item">$31</p>
                 </a>
               </li>
               <li class="item">
                 <a class="item-link" href="">
-                  <img
-                    class="item-img"
-                    src="./img/new colection/man-yellow.jpg"
-                    alt="man in yellow t-shirt"
-                  />
-                  <h3 class="item-descr">BLUE TSHIRT</h3>
-                  <p class="price-item">$26</p>
+                  <div class="overlay">
+                    <img
+                      class="item-img"
+                      src="./img/new colection/man-yellow.jpg"
+                      alt="man in yellow t-shirt"
+                    />
+                  </div>
+                  <h3 class="item-descr">YELLOW Tshirt</h3>
+                  <p class="price-item">$21</p>
                 </a>
               </li>
               <li class="item">
                 <a class="item-link" href="">
-                  <img
-                    class="item-img"
-                    src="./img/new colection/woman-second.jpg"
-                    alt="woman second"
-                  />
-                  <h3 class="item-descr">BLUE TSHIRT</h3>
-                  <p class="price-item">$26</p>
+                  <div class="overlay">
+                    <img
+                      class="item-img"
+                      src="./img/new colection/woman-second.jpg"
+                      alt="woman second"
+                    />
+                  </div>
+                  <h3 class="item-descr">Cool lingerie</h3>
+                  <p class="price-item">$56</p>
                 </a>
               </li>
             </ul>
@@ -169,10 +179,10 @@
             <li class="gallery-list">
               <a class="gallery-link" href="">
                 <img
-                  class="gallery-img"
-                  src="./img/products/product-1.png"
-                  alt="Sandals"
-                />
+                class="gallery-img"
+                src="./img/products/product-1.png"
+                alt="Sandals"
+              />
                 <h3 class="gallery-descr">BLUE TSHIRT</h3>
                 <p class="price">$26</p>
               </a>
@@ -300,6 +310,16 @@
               <a class="read-more-link" href="/" target="_blank">Read More</a>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="section-newslatter">
+        <div class="container">
+          <div class="newslatter">
+            <h2 class="newsletter-header">NEWSLETTER</h2>
+            <p class="follow">Follow a collection of news & promotions</p>
+            <textarea class="input-area" type="text" >Enter your email here</textarea>
+          </div>
         </div>
       </section>
     </main>
