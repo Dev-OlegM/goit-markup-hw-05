@@ -6,6 +6,21 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --white-color: #fefefe;
+  --main-color: #1abc9c;
+  --grey-color: #555252;
+  --for-product: #515151;
+  --for-strings: #fffcfc;
+  --for-links: #ffffff;
+  --backgroung-white: #e9f0fd;
+  --for-price: #7fd9c7;
+  --for-readmore: #4ec6ab;
+
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Open Sans', sans-serif;
+}
+
 /* clear */
 
 .clear {
@@ -42,8 +57,8 @@ html {
 
 .header-top .phone-number,
 .mail-adress {
-  color: #fefefe;
-  font-family: 'Open Sans';
+  color: var(--white-color);
+  font-family: var(--second-font);
   font-size: 14px;
   font-weight: 300;
   line-height: 11px;
@@ -70,14 +85,14 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
-  background-color: #1abc9c;
+  background-color: var(--main-color);
   height: 50px;
 }
 
 .header-top .link {
   text-decoration: none;
-  color: #fefefe;
-  font-family: 'Open Sans';
+  color: var(--white-color);
+  font-family: var(--second-font);
   font-size: 14px;
   font-weight: 300;
   line-height: 11px;
@@ -113,8 +128,8 @@ html {
 header .logo-site {
   margin: 0;
   padding-top: 35px;
-  color: #555252;
-  font-family: Roboto;
+  color: var(--grey-color);
+  font-family: var(--main-font);
   font-size: 30px;
   font-weight: 300;
   line-height: 32px;
@@ -123,14 +138,13 @@ header .logo-site {
 }
 
 .site-header .logo-site:first-letter {
-  color: #1abc9c;
-  font-family: 'Roboto - Black';
+  color: var(--main-color);
+  font-family: var(--main-font);
   font-weight: 400;
 }
 
 header .header-nav-list {
-  color: #0f0101;
-  font-family: 'Open Sans';
+  font-family: var(--second-font);
   font-size: 14px;
   font-weight: 700;
   line-height: 11px;
@@ -147,12 +161,12 @@ header .link {
 
 header .link:hover,
 header .link:focus {
-  color: #1abc9c;
+  color: var(--main-color);
 }
 
 .product {
-  color: #515151;
-  font-family: 'Roboto - Black';
+  color: var(--for-product);
+  font-family: var(--main-font);
   font-size: 48px;
   font-weight: 400;
   line-height: 32px;
@@ -194,8 +208,8 @@ header .link:focus {
 }
 
 .banner .first-string {
-  color: #fffcfc;
-  font-family: 'Roboto';
+  color: var(--for-strings);
+  font-family: var(--main-font);
   font-size: 48px;
   font-weight: 300;
   text-transform: uppercase;
@@ -203,8 +217,8 @@ header .link:focus {
 }
 
 .banner .second-string {
-  color: #fffcfc;
-  font-family: 'Open Sans';
+  color: var(--for-strings);
+  font-family: var(--second-font);
   font-size: 48px;
   font-weight: 400;
   text-transform: uppercase;
@@ -212,14 +226,14 @@ header .link:focus {
 }
 
 .banner .and {
-  color: #1abc9c;
-  font-family: Roboto;
+  color: var(--main-color);
+  font-family: var(--main-font);
   font-weight: 700;
 }
 
 .banner .sale {
-  color: #1abc9c;
-  font-family: 'Open Sans - Semibold';
+  color: var(--main-color);
+  font-family: var(--second-font);
   font-weight: 600;
 }
 
@@ -228,17 +242,17 @@ header .link:focus {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--for-links);
   width: 120px;
   height: 42px;
-  border: 2px solid #1abc9c;
-  background-color: #1abc9c;
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
 }
 
 /* about */
 
 .about .container {
-  background-color: #ffffff;
+  background-color: var(--for-links);
 }
 
 .about .about-items {
@@ -281,7 +295,7 @@ header .link:focus {
   width: 66px;
   height: 66px;
   background-repeat: no-repeat;
-  color: #1abc9c;
+  color: var(--main-color);
   position: absolute;
   top: 0;
   left: 50%;
@@ -294,7 +308,7 @@ header .link:focus {
   width: 66px;
   height: 66px;
   background-repeat: no-repeat;
-  color: #1abc9c;
+  color: var(--main-color);
   position: absolute;
   top: 0;
   left: 50%;
@@ -307,7 +321,7 @@ header .link:focus {
   width: 66px;
   height: 66px;
   background-repeat: no-repeat;
-  color: #1abc9c;
+  color: var(--main-color);
   position: absolute;
   top: 0;
   left: 50%;
@@ -320,7 +334,7 @@ header .link:focus {
   width: 66px;
   height: 66px;
   background-repeat: no-repeat;
-  color: #1abc9c;
+  color: var(--main-color);
   position: absolute;
   top: 0;
   left: 50%;
@@ -331,10 +345,9 @@ header .link:focus {
   margin: 0;
   padding: 0;
   text-align: center;
-  color: #555252;
-  font-family: 'Open Sans - Semi Bold';
+  color: var(--grey-color);
+  font-family: var(--second-font);
   font-size: 18px;
-  font-weight: 400;
   line-height: 32px;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -344,8 +357,8 @@ header .link:focus {
   margin: 0;
   padding: 0;
   text-align: justify;
-  color: #555252;
-  font-family: 'Open Sans';
+  color: var(--grey-color);
+  font-family: var(--second-font);
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -354,13 +367,13 @@ header .link:focus {
 /* new collection */
 
 .new-collection .container {
-  background-color: #e9f0fd;
+  background-color: var(--backgroung-white);
 }
 
 .new-collection .section-title {
   text-align: center;
-  color: #515151;
-  font-family: 'Roboto';
+  color: var(--for-product);
+  font-family: var(--main-font);
   font-size: 48px;
   line-height: 32px;
   text-transform: uppercase;
@@ -380,7 +393,7 @@ header .link:focus {
   background-image: url(../img/lines/green-lines.png);
   width: 164px;
   height: 15px;
-  color: #1abc9c;
+  color: var(--main-color);
   left: 717px;
   top: 166px;
 }
@@ -399,7 +412,7 @@ header .link:focus {
   margin-right: 30px;
   width: 255px;
   height: 322px;
-  background-color: #ffffff;
+  background-color: var(--for-links);
 }
 
 .new-collection .item-descr,
@@ -423,8 +436,8 @@ header .link:focus {
   width: 255px;
   height: 40px;
   background-color: #323232;
-  color: #ffffff;
-  font-family: 'Roboto - Black';
+  color: var(--for-links);
+  font-family: var(--main-font);
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
@@ -439,7 +452,7 @@ header .link:focus {
   align-items: center;
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto - Black';
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
   background-color: #8c8c8c;
@@ -447,7 +460,7 @@ header .link:focus {
   height: 40px;
   position: absolute;
   right: 0;
-  color: #ffffff;
+  color: var(--for-links);
 }
 
 .new-collection .item-link .overlay::before {
@@ -466,16 +479,16 @@ header .link:focus {
 }
 
 .item-link:hover .item-descr {
-  background-color: #1abc9c;
+  background-color: var(--main-color);
 }
 .item-link:hover .price-item {
-  background-color: #7fd9c7;
+  background-color: var(--for-price);
 }
 
 .new-collection .about-items {
   margin: 0;
   padding: 0;
-  background-color: red;
+  
 }
 
 .item1 {
@@ -486,8 +499,8 @@ header .link:focus {
 
 .product-header {
   text-align: center;
-  color: #515151;
-  font-family: 'Roboto';
+  color: var(--for-product);
+  font-family: var(--main-font);
   font-size: 48px;
   line-height: 32px;
   text-transform: uppercase;
@@ -507,7 +520,7 @@ header .link:focus {
   background-image: url(../img/lines/green-lines.png);
   width: 164px;
   height: 15px;
-  color: #1abc9c;
+  color: var(--main-color);
   left: 716px;
   top: 170px;
 }
@@ -525,7 +538,7 @@ header .link:focus {
 .gallery-list {
   display: flex;
   width: 255px;
-  background-color: #e9f0fd;
+  background-color: var(--backgroung-white);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -573,14 +586,14 @@ header .link:focus {
   margin: 0px;
   padding: 0px;
   padding-left: 15px;
-  font-family: 'Roboto';
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
   background-color: #323232;
   width: 200px;
   height: 40px;
   position: relative;
-  color: #ffffff;
+  color: var(--for-links);
 }
 
 .price {
@@ -589,14 +602,14 @@ header .link:focus {
   align-items: center;
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto - Black';
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
   background-color: #8c8c8c;
   width: 55px;
   height: 40px;
   position: relative;
-  color: #ffffff;
+  color: var(--for-links);
 }
 
 .gallery-img {
@@ -605,17 +618,17 @@ header .link:focus {
 }
 
 .gallery-link:hover .gallery-descr {
-  background-color: #1abc9c;
+  background-color: var(--main-color);
 }
 .gallery-link:hover .price {
-  background-color: #7fd9c7;
+  background-color: var(--for-price);
 }
 
 /* News */
 
 .news-header {
-  color: #555252;
-  font-family: 'Roboto';
+  color: var(--grey-color);
+  font-family: var(--main-font);
   font-size: 48px;
   line-height: 32px;
   text-transform: uppercase;
@@ -626,7 +639,7 @@ header .link:focus {
 
 .news .container {
   position: relative;
-  background-color: #e9f0fd;
+  background-color: var(--backgroung-white);
 }
 
 .news .news-header::after {
@@ -636,7 +649,7 @@ header .link:focus {
   background-image: url(../img/lines/green-lines.png);
   width: 164px;
   height: 15px;
-  color: #1abc9c;
+  color: var(--main-color);
   left: 710px;
   top: 166px;
 }
@@ -653,8 +666,8 @@ header .link:focus {
 }
 
 .header-news {
-  color: #555252;
-  font-family: 'Open Sans';
+  color: var(--grey-color);
+  font-family: var(--second-font);
   font-size: 18px;
   line-height: 26px;
   padding-top: 14px;
@@ -663,8 +676,8 @@ header .link:focus {
 }
 
 .descr-news {
-  color: #555252;
-  font-family: 'Open Sans';
+  color: var(--grey-color);
+  font-family: var(--second-font);
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -675,8 +688,8 @@ header .link:focus {
 .read-more {
   width: 159px;
   height: 51px;
-  background-color: #4ec6ab;
-  font-family: 'Open Sans';
+  background-color: var(--for-readmore);
+  font-family: var(--second-font);
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
@@ -685,7 +698,7 @@ header .link:focus {
 
 .news .read-more-link {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--for-links);
 }
 
 .news-item {
@@ -697,7 +710,7 @@ header .link:focus {
 }
 
 .news .read-more-link:hover {
-  color: #1abc9c;
+  color: var(--main-color);
 }
 
 .item-for-header {
@@ -708,8 +721,8 @@ header .link:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #4ec6ab;
-  font-family: 'Open Sans';
+  background-color: var(--for-readmore);
+  font-family: var(--second-font);
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
@@ -732,8 +745,8 @@ header .link:focus {
 .newslatter .newsletter-header {
   margin: 0;
   padding: 0;
-  color: #515151;
-  font-family: 'Roboto';
+  color: var(--for-product);
+  font-family: var(--main-font);
   font-size: 48px;
   line-height: 32px;
   text-transform: uppercase;
@@ -762,7 +775,7 @@ header .link:focus {
   width: 89px;
   height: 56px;
   border-radius: 0 5px 5px 0;
-  background-color: #4ec6ab;
+  background-color: var(--for-readmore);
   top: 276px;
   left: 977px;
 }
@@ -772,8 +785,8 @@ header .link:focus {
   padding: 0;
   margin-top: 72px;
   padding-left: 654px;
-  color: #ffffff;
-  font-family: 'Open Sans';
+  color: var(--for-links);
+  font-family: var(--second-font);
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
@@ -783,11 +796,11 @@ header .link:focus {
   width: 540px;
   height: 61px;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: var(--for-links);
   margin-top: 44px;
   margin-left: 528px;
-  color: #555252;
-  font-family: 'Open Sans';
+  color: var(--grey-color);
+  font-family: var(--second-font);
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
