@@ -87,7 +87,7 @@ html {
   position: absolute;
   content: '';
   display: inline-block;
-  background-image: url(/img/icons/icon-phone.png);
+  background-image: url(../img/icons/icon-phone.png);
   width: 17px;
   height: 19px;
   left: 246px;
@@ -97,7 +97,7 @@ html {
   position: absolute;
   content: '';
   display: inline-block;
-  background-image: url(/img/icons/mail.png);
+  background-image: url(../img/icons/mail.png);
   width: 22px;
   height: 14px;
   left: 397px;
@@ -185,7 +185,7 @@ header .link:focus {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(/img/banner.jpg);
+    url(../img/banner.jpg);
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -277,7 +277,7 @@ header .link:focus {
 
 .about .item1::before {
   content: '';
-  background-image: url(/img/icons/setting.png);
+  background-image: url(../img/icons/setting.png);
   width: 66px;
   height: 66px;
   background-repeat: no-repeat;
@@ -290,7 +290,7 @@ header .link:focus {
 
 .about .item2::before {
   content: '';
-  background-image: url(/img/icons/power.png);
+  background-image: url(../img/icons/power.png);
   width: 66px;
   height: 66px;
   background-repeat: no-repeat;
@@ -303,7 +303,7 @@ header .link:focus {
 
 .about .item3::before {
   content: '';
-  background-image: url(/img/icons/world.png);
+  background-image: url(../img/icons/world.png);
   width: 66px;
   height: 66px;
   background-repeat: no-repeat;
@@ -316,7 +316,7 @@ header .link:focus {
 
 .about .item4::before {
   content: '';
-  background-image: url(/img/icons/compass.png);
+  background-image: url(../img/icons/compass.png);
   width: 66px;
   height: 66px;
   background-repeat: no-repeat;
@@ -377,7 +377,7 @@ header .link:focus {
   position: absolute;
   content: '';
   display: inline-block;
-  background-image: url(/img/lines/green-lines.png);
+  background-image: url(../img/lines/green-lines.png);
   width: 164px;
   height: 15px;
   color: #1abc9c;
@@ -504,7 +504,7 @@ header .link:focus {
   position: absolute;
   content: '';
   display: inline-block;
-  background-image: url(/img/lines/green-lines.png);
+  background-image: url(../img/lines/green-lines.png);
   width: 164px;
   height: 15px;
   color: #1abc9c;
@@ -633,7 +633,7 @@ header .link:focus {
   position: absolute;
   content: '';
   display: inline-block;
-  background-image: url(/img/lines/green-lines.png);
+  background-image: url(../img/lines/green-lines.png);
   width: 164px;
   height: 15px;
   color: #1abc9c;
@@ -724,8 +724,8 @@ header .link:focus {
 .section-newslatter .newslatter {
   margin: 0;
   padding: 0;
-  background-image: url(/img/newslatter-background/background-newslatter1.png),
-    url(/img/newslatter-background/background-nwslatter2.jpg);
+  background-image: url(../img/newslatter-background/background-newslatter1.png),
+    url(../img/newslatter-background/background-nwslatter2.jpg);
   position: relative;
 }
 
@@ -744,7 +744,7 @@ header .link:focus {
 .newslatter .newsletter-header:after {
   content: '';
   display: inline-block;
-  background-image: url(/img/lines/newslatter-whiteline.png);
+  background-image: url(../img/lines/newslatter-whiteline.png);
   position: absolute;
   width: 164px;
   height: 15px;
@@ -756,7 +756,7 @@ header .link:focus {
   position: absolute;
   content: '';
   display: inline-block;
-  background-image: url(/img/icons/newslatter-icon.png);
+  background-image: url(../img/icons/newslatter-icon.png);
   background-position: center;
   background-repeat: no-repeat;
   width: 89px;
