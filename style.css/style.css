@@ -510,8 +510,7 @@ header .link:focus {
   display: block;
 }
 
-.new-collection .button-like,
-.gallery .button-like {
+.new-collection .button-like {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -530,8 +529,7 @@ header .link:focus {
   cursor: pointer;
 }
 
-.new-collection .button-review,
-.gallery .button-review {
+.new-collection .button-review {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -550,8 +548,7 @@ header .link:focus {
   cursor: pointer;
 }
 
-.new-collection .button-clock,
-.gallery .button-clock {
+.new-collection .button-clock {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -569,8 +566,7 @@ header .link:focus {
   cursor: pointer;
 }
 
-.new-collection .add-cart,
-.gallery .add-cart {
+.new-collection .add-cart {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -649,20 +645,97 @@ header .link:focus {
   margin: 0;
   padding: 0;
   position: absolute;
-  display: block;
+  display: none;
+  flex-wrap: wrap;
+  width: 168px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .gallery .gallery-link:hover .action {
-  display: block;
+  display: flex;
+}
+
+.gallery .button-like {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(../img/icons/new-collection/like.png);
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.gallery .button-like:hover,
+.gallery .button-like:focus {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.gallery .button-review {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(../img/icons/new-collection/review.png);
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.gallery .button-review:hover,
+.gallery .button-review:focus {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.gallery .button-clock {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(../img/icons/new-collection/clock.png);
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery .button-clock:hover,
+.gallery .button-clock:focus {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.gallery .add-cart {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(../img/icons/new-collection/add-card.png);
+  width: 166px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 7px;
+}
+
+.gallery .add-cart:hover,
+.gallery .add-cart:focus {
+  background-color: #323232;
+  cursor: pointer;
 }
 
 .gallery-list {
   display: flex;
   width: 255px;
-  background-color: var(--backgroung-white);
+  /* background-color: var(--backgroung-white); */
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -688,7 +761,7 @@ header .link:focus {
   width: 200px;
 }
 
-.product .gallery-link::after {
+.product .overlay::before {
   display: none;
   position: absolute;
   content: '';
@@ -699,7 +772,7 @@ header .link:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.product .gallery-link:hover::after {
+.product .overlay:hover::before {
   display: inline-block;
 }
 
@@ -716,7 +789,7 @@ header .link:focus {
   background-color: #323232;
   width: 200px;
   height: 40px;
-  position: relative;
+  position: absolute;
   color: var(--for-links);
 }
 
@@ -732,13 +805,14 @@ header .link:focus {
   background-color: #8c8c8c;
   width: 55px;
   height: 40px;
-  position: relative;
+  position: absolute;
   color: var(--for-links);
+  right: 0;
 }
 
 .gallery-img {
   width: 255px;
-  position: absolute;
+  position: none;
 }
 
 .gallery-link:hover .gallery-descr {
@@ -899,13 +973,14 @@ header .link:focus {
   width: 89px;
   height: 56px;
   border-radius: 0 5px 5px 0;
+  background-color: transparent;
   background-color: var(--for-readmore);
   top: 278px;
   left: 732px;
 }
 
-.section-newslatter .newslatter-buttonton:hover {
-  background-color: red;
+.section-newslatter .newslatter-button:hover {
+  background-color: var(--main-color);
   cursor: pointer;
 }
 
