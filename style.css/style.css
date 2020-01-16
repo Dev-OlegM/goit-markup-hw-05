@@ -882,6 +882,7 @@ header .link:focus {
 .news .read-more-link {
   text-decoration: none;
   color: var(--for-links);
+  border-radius: 3px;
 }
 
 .news-item {
