@@ -224,8 +224,7 @@ header .link:focus {
 /* banner */
 
 
-.banner .container {
-  text-align: center;
+.banner .banner-content {
   background-image: linear-gradient(
       to bottom right,
       rgba(0, 0, 0, 0.5),
@@ -238,7 +237,12 @@ header .link:focus {
   justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
-  
+  background-size: cover;
+
+}
+
+.banner .container {
+  text-align: center;
 }
 
 .banner .first-string {
