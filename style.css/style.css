@@ -223,7 +223,6 @@ header .link:focus {
 
 /* banner */
 
-
 .banner .banner-content {
   background-image: linear-gradient(
       to bottom right,
@@ -238,7 +237,6 @@ header .link:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .banner .container {
@@ -290,7 +288,7 @@ header .link:focus {
 
 .banner .buy-link:hover,
 .header-top .mail-adress:focus {
-  color: var(--for-price);
+  background-color: var(--for-readmore);
 }
 
 /* about */
@@ -903,7 +901,7 @@ header .link:focus {
 }
 
 .news .read-more-link:hover {
-  color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 .item-for-header {
