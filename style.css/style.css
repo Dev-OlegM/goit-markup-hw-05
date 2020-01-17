@@ -230,8 +230,8 @@ header .link:focus {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../img/banner_l.jpg);
-  height: 409px;
+    url(../img/banner.jpg);
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
