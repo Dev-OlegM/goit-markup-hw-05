@@ -234,7 +234,13 @@ header .link:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner .container {
+  text-align: center;
+  
 }
 
 .banner .first-string {
@@ -277,6 +283,7 @@ header .link:focus {
   height: 42px;
   border: 2px solid var(--main-color);
   background-color: var(--main-color);
+  margin: 0 auto;
 }
 
 .banner .buy-link:hover,
